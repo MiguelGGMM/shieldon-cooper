@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="570" viewBox="0 0 900 570" role="img" aria-labelledby="title desc">
+  <title id="title">Buyback curve: normalized token price and treasury TVL</title>
+  <desc id="desc">As drawdown rises from zero to one hundred percent, normalized token price falls linearly while treasury TVL remaining after the formula-sized buyback follows one minus the cubic buyback fraction.</desc>
+  <rect width="900" height="570" rx="16" fill="#ffffff"/>
+  <text x="450" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#111827">Buyback curve</text>
+  <text x="450" y="51" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Normalized to priceAth and tvlAth</text>
+
+  <g stroke="#e5e7eb" stroke-width="1">
+    <path d="M90 60H770 M90 165H770 M90 270H770 M90 375H770 M90 480H770"/>
+    <path d="M90 60V480 M260 60V480 M430 60V480 M600 60V480 M770 60V480"/>
+  </g>
+  <g stroke="#374151" stroke-width="1.5">
+    <path d="M90 60V480H770" fill="none"/>
+  </g>
+
+  <g font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">
+    <text x="76" y="64" text-anchor="end">100%</text>
+    <text x="76" y="169" text-anchor="end">75%</text>
+    <text x="76" y="274" text-anchor="end">50%</text>
+    <text x="76" y="379" text-anchor="end">25%</text>
+    <text x="76" y="484" text-anchor="end">0%</text>
+    <text x="90" y="502" text-anchor="middle">0%</text>
+    <text x="260" y="502" text-anchor="middle">25%</text>
+    <text x="430" y="502" text-anchor="middle">50%</text>
+    <text x="600" y="502" text-anchor="middle">75%</text>
+    <text x="770" y="502" text-anchor="middle">100%</text>
+    <text x="430" y="532" text-anchor="middle" font-size="14" fill="#374151">Drawdown, d</text>
+    <text x="21" y="270" text-anchor="middle" font-size="14" fill="#374151" transform="rotate(-90 21 270)">Normalized value remaining</text>
+  </g>
+
+  <path d="M90 60L770 480" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 60 L158 72.6 L226 88 L294 107.6 L362 132.8 L430 165 L498 205.6 L566 256 L634 317.6 L702 391.8 L770 480" fill="none" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g font-family="system-ui, sans-serif" font-size="13" font-weight="600">
+    <line x1="505" y1="84" x2="541" y2="84" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <text x="550" y="89" fill="#1f2937">Token price: 1 − d</text>
+    <line x1="505" y1="110" x2="541" y2="110" stroke="#f97316" stroke-width="4" stroke-linecap="round"/>
+    <text x="550" y="115" fill="#1f2937">Treasury TVL: 1 − f(d)</text>
+  </g>
+
+  <text x="430" y="556" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6b7280">Assumes tvlAth is fully available and excludes subsequent fee inflows.</text>
+</svg>
